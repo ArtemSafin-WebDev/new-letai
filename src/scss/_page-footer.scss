@@ -1,0 +1,95 @@
+.page-footer {
+  background-color: #2b2b2b;
+  color: white;
+  padding-top: 5.4rem;
+  padding-bottom: 11.2rem;
+
+  @include blockWrapper;
+
+  @include breakpoint(mobile) {
+    padding-top: 2.8rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.page-footer__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__nav {
+  & > ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 2rem;
+
+    @include breakpoint(mobile) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-gap: 2rem;
+      grid-row-gap: 4rem;
+    }
+    & > li {
+      display: flex;
+      flex-direction: column;
+      gap: 1.7rem;
+
+      @include breakpoint(mobile) {
+        gap: 2rem;
+      }
+      & > a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.88rem;
+        line-height: 3.5rem;
+        display: block;
+
+        @include breakpoint(mobile) {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.8rem;
+          line-height: 1.2;
+        }
+
+        @media (hover: hover) {
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+
+      & > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.86rem;
+
+        @include breakpoint(mobile) {
+        }
+
+        & > li {
+          display: block;
+
+          & > a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            display: block;
+            @media (hover: hover) {
+              &:hover {
+                color: var(--primary-color);
+              }
+            }
+
+            @include breakpoint(mobile) {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.4rem;
+              line-height: 1.4;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+.router {
+  @include blockWrapper;
+  padding-top: 9.6rem;
+  padding-bottom: 9.4rem;
+  background: linear-gradient(180deg, #b4efdc 0%, #f2fffb 66.67%, #b4efdc 100%);
+  color: var(--text-color);
+
+  @include breakpoint(mobile) {
+    padding-top: 9rem;
+    padding-bottom: 4.3rem;
+  }
+}
+
+.router__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.router__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.5rem;
+  margin-bottom: 1rem;
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.router__row {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  grid-gap: 8rem;
+  margin-bottom: 2rem;
+  grid-template-areas: "image content";
+
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.router__image-wrapper {
+  grid-area: image;
+  align-self: flex-end;
+  margin-bottom: -12rem;
+
+  @include breakpoint(mobile) {
+    margin: 0;
+    z-index: 80;
+  }
+}
+
+.router__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.router__text-content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(mobile) {
+    display: contents;
+  }
+}
+
+.router__internet {
+  width: 30rem;
+  height: auto;
+  display: block;
+}
+
+.router__internet-wrapper {
+  position: relative;
+  margin-bottom: 6.5rem;
+  align-self: flex-start;
+  @include breakpoint(mobile) {
+    align-self: center;
+    order: -40;
+    margin-bottom: 3rem;
+  }
+}
+
+.router__wifi {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -4rem;
+  width: 28rem;
+  height: auto;
+  margin-top: 1rem;
+  pointer-events: none;
+
+  @include breakpoint(mobile) {
+    right: 0;
+    top: 0;
+    width: 36rem;
+    transform: none;
+    margin: 0;
+    left: auto;
+    max-width: none;
+    margin-right: -9rem;
+    margin-top: -4rem;
+  }
+}
+
+.router__advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5.8rem;
+  @include breakpoint(mobile) {
+    gap: 4.6rem;
+  }
+}
+
+.router__advantages-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 6rem;
+  align-items: center;
+
+  @include breakpoint(mobile) {
+    gap: 3rem;
+  }
+}
+
+.router__advantages-card-icon {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+  flex-shrink: 0;
+
+  @include breakpoint(mobile) {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+}
+
+.router__advantages-card-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  max-width: 26rem;
+
+  @include breakpoint(mobile) {
+    max-width: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+.router__link {
+  padding: 3rem 13.5rem;
+  text-align: center;
+  align-self: center;
+  background: #ffffff;
+  box-shadow: 0px 0.27rem 2rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 120%;
+  color: var(--primary-color);
+  margin-top: 6rem;
+  transition: color 0.2s, background-color 0.2s;
+  &:link,
+  &:visited {
+    color: var(--primary-color);
+  }
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+  }
+  @include breakpoint(mobile) {
+    padding: 1.8rem 3.6rem;
+    border-radius: 0.3rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 5rem;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: none;
+    &:link,
+    &:visited {
+      color: white;
+    }
+  }
+}
