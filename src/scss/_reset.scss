@@ -79,6 +79,10 @@ textarea {
   display: block;
 }
 
+picture {
+  display: contents;
+}
+
 input:not([type="checkbox"]):not([type="radio"]) {
   appearance: none;
   -webkit-appearance: none;

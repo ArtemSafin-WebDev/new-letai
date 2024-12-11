@@ -1,0 +1,351 @@
+.intro__top {
+  @include blockWrapper;
+  color: white;
+  position: relative;
+  z-index: 20;
+}
+
+.intro__top-image {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: auto;
+}
+
+.intro__top-content {
+  @include blockContent;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6.9rem;
+  padding-bottom: 2rem;
+
+  @include breakpoint(mobile) {
+    padding-top: 3rem;
+  }
+}
+
+.intro__heading {
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 8rem;
+
+  @include breakpoint(mobile) {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+.intro__heading-text {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 0.8rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+.intro__win {
+  margin-top: 63rem;
+
+  @include breakpoint(mobile) {
+    margin-top: 77rem;
+  }
+}
+
+.intro__win-card {
+  border-radius: 2.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0rem 0.25rem 0.6438rem 0rem #6cc5de inset,
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+  padding: 2.4rem 3rem;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem;
+  color: #000;
+
+  @include breakpoint(mobile) {
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0rem 0.25rem 0.6438rem 0rem #6cc5de inset,
+      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    padding: 1.6rem 2rem;
+    gap: 2rem;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  svg {
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
+    object-fit: contain;
+    overflow: visible;
+
+    @include breakpoint(mobile) {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+
+.intro__form {
+  margin-top: 4rem;
+
+  @include breakpoint(mobile) {
+    margin-top: 2rem;
+  }
+}
+
+.intro__form-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 5.6rem;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 1.4rem;
+  }
+}
+
+.intro__form-text {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  text-align: center;
+  margin-top: 3.2rem;
+  color: #000;
+  font-family: var(--pt-root-ui);
+
+  &--small {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-top: 1.8rem;
+  }
+}
+
+.intro__form-input {
+  border-radius: 2.5rem;
+  background: #fff;
+  box-shadow: 0rem 0.25rem 0.6438rem 0rem #bfbfbf inset;
+  backdrop-filter: blur(2px);
+  padding: 0 2rem;
+  height: 6rem;
+  width: 100%;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: center;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0rem 0.25rem 0.6438rem 0rem #bfbfbf inset;
+    backdrop-filter: blur(2px);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 7rem;
+  }
+  &::placeholder {
+    color: #c3b6b6;
+  }
+}
+
+.intro__form-submit {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  align-self: stretch;
+  text-align: center;
+  width: 100%;
+  color: white;
+  border-radius: 2.5rem;
+  background: #fe5000;
+  box-shadow: 0rem 0.25rem 0.25rem 0rem #ffb990 inset;
+  min-height: 6rem;
+  padding: 0.4rem 2rem;
+  text-align: center;
+  display: block;
+
+  @include breakpoint(mobile) {
+    border-radius: 1rem;
+    background: #fe5000;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem #ffb990 inset;
+    min-height: 7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+}
+
+.intro__numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6.4rem;
+  grid-row-gap: 4rem;
+  width: 100%;
+  max-width: 68.4rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+  @include breakpoint(mobile) {
+    margin: 0;
+    margin-top: 4.7rem;
+    grid-gap: 2.2rem;
+    max-width: none;
+  }
+}
+
+.intro__numpad-card {
+  width: 100%;
+  perspective: 1000px;
+  cursor: pointer;
+  display: block;
+  &.active {
+    .intro__numpad-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+.intro__numpad-card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "stack";
+  align-items: stretch;
+  justify-items: stretch;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    grid-area: stack;
+  }
+}
+
+.intro__numpad-card-front {
+  border-radius: 2.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(51, 144, 229, 0.51) inset,
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  grid-area: stack;
+  font-family: var(--pt-root-ui);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "stack";
+  backface-visibility: hidden;
+
+  @include breakpoint(mobile) {
+    border-radius: 1rem;
+    background: rgba(233, 233, 233, 0.6);
+    box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(51, 144, 229, 0.51) inset,
+      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+  }
+}
+
+.intro__numpad-number {
+  align-self: stretch;
+  justify-self: stretch;
+
+  object-fit: contain;
+  grid-area: stack;
+  text-align: center;
+}
+
+.intro__numpad-card-back {
+  transform: rotateY(180deg);
+  border-radius: 2.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(51, 144, 229, 0.51) inset,
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.8rem;
+  grid-area: stack;
+  backface-visibility: hidden;
+  backdrop-filter: blur(8px);
+  align-items: center;
+
+  padding: 2.4rem 0.8rem;
+
+  @include breakpoint(mobile) {
+    padding: 1rem 0.4rem;
+    border-radius: 1rem;
+    gap: 0.4rem;
+    padding-bottom: 0.4rem;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.intro__numpad-card-back-text {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: auto 0;
+  &--small {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  @include breakpoint(mobile) {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+
+.intro__numpad-card-prize-image {
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+  overflow: visible;
+
+  @include breakpoint(mobile) {
+    width: 6rem;
+    height: 6rem;
+  }
+}

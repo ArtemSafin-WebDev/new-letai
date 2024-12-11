@@ -1,0 +1,214 @@
+.vacancies {
+  @include blockWrapper;
+  padding-bottom: 7.7rem;
+  padding-top: 4.4rem;
+  background: linear-gradient(180deg, #acdbf6 0%, #d2b4eb 100%);
+
+  @include breakpoint(mobile) {
+    padding-bottom: 8rem;
+    padding-top: 2.7rem;
+    background: linear-gradient(180deg, #afdcf6 0%, #d1b4eb 100%);
+  }
+}
+
+.vacancies__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.vacancies__heading {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.5rem;
+  margin-bottom: 7.1rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 4.4rem;
+  }
+}
+
+.vacancies__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 5rem;
+  grid-row-gap: 4.6rem;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1rem;
+  }
+}
+
+.vacancies__card {
+  perspective: 1000px;
+  cursor: pointer;
+  &.active {
+    .vacancies__card-inner {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+.vacancies__card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "stack";
+  align-items: stretch;
+  justify-items: stretch;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 51.3%;
+    grid-area: stack;
+  }
+}
+
+.vacancies__card-front,
+.vacancies__card-back {
+  grid-area: stack;
+  backface-visibility: hidden;
+  grid-area: stack;
+}
+
+.vacancies__card-front {
+  border-radius: 2.5rem;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(198, 52, 255, 0.25) inset,
+    0rem 0.1688rem 1.2375rem 0rem rgba(255, 255, 255, 0.33) inset,
+    0rem 0.1688rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-items: center;
+  padding: 0.8rem;
+
+  @include breakpoint(mobile) {
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(198, 52, 255, 0.25) inset,
+      0rem 0.1688rem 1.2375rem 0rem rgba(255, 255, 255, 0.33) inset,
+      0rem 0.1688rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.vacancies__card-back {
+  border-radius: 2.5rem;
+  background: #fff;
+  box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(51, 144, 229, 0.51) inset,
+    0rem 0.1688rem 1.2375rem 0rem rgba(255, 255, 255, 0.33) inset,
+    0rem 0.1688rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0.8rem;
+  @include breakpoint(mobile) {
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(51, 144, 229, 0.51) inset,
+      0rem 0.1688rem 1.2375rem 0rem rgba(255, 255, 255, 0.33) inset,
+      0rem 0.1688rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.vacancies__card-city {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  color: #fe5000;
+  text-align: center;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+
+.vacancies__card-name {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #fe5000;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+
+.vacancies__card-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vacancies__card-contacts-link {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+  transition: text-decoration-color 0.2s, color 0.2s;
+  color: #fe5000;
+
+  @include breakpoint(mobile) {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &:link,
+  &:visited {
+    color: #fe5000;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+.vacancies__card-link {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #acdbf6;
+  text-align: center;
+  margin-top: 1rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 0.5rem;
+  }
+  &:link,
+  &:visited {
+    color: #acdbf6;
+  }
+}
