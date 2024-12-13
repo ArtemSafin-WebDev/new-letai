@@ -1,0 +1,125 @@
+.text-modal {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overscroll-behavior-y: contain;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.4s, visibility 0s linear 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  padding: 4rem var(--content-padding);
+
+  @include breakpoint(mobile) {
+    padding: 1.6rem;
+  }
+  &.active {
+    opacity: 1;
+    visibility: inherit;
+    transition: opacity 0.4s, visibility 0.4s;
+  }
+
+  body:not(.loaded) & {
+    display: none;
+  }
+}
+
+.text-modal__inner {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 94.4rem;
+  border-radius: 2.5rem;
+  background: #fff;
+  box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(0, 0, 0, 0.25) inset;
+  padding: 3rem;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+  color: black;
+
+  @include breakpoint(mobile) {
+    max-width: none;
+    border-radius: 2.5rem;
+    background: #fff;
+    box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(0, 0, 0, 0.25) inset;
+    padding: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2.6rem;
+  }
+}
+
+.text-modal__close {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #fe5000;
+
+  @include breakpoint(mobile) {
+    width: 3rem;
+    height: 3rem;
+    top: 2.2rem;
+    right: 2.2rem;
+  }
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: white;
+
+    @include breakpoint(mobile) {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+  }
+}
+
+.text-modal__heading {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 3.7rem;
+  color: #fe5000;
+
+  @include breakpoint(mobile) {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+}
+
+.text-modal__text {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.2rem;
+
+  & > * {
+    all: revert;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    text-indent: 5.2rem;
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
