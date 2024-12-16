@@ -1,8 +1,7 @@
 .news {
   @include blockWrapper;
 
-  padding-top: 8rem;
-  padding-bottom: 11.4rem;
+  padding: 8rem 3rem 11.4rem;
   background: #fff;
 
   @include breakpointMF(small-tablet) {
@@ -49,7 +48,7 @@
 .news__list {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 1fr 1.35fr 1fr 1.35fr 1fr;
+  grid-template-columns: 1fr 1.35fr 1fr 1.35fr;
   grid-auto-rows: 1fr;
   grid-gap: 3.2rem;
   //   grid-auto-flow: dense;
