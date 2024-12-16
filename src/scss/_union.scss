@@ -58,7 +58,8 @@
   padding: 3rem 1.5rem;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
 
   @include breakpoint(mobile) {
     border-radius: 2.5rem;

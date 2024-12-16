@@ -1,6 +1,9 @@
 .page-header {
-  background-color: #fff;
+  background-color: #000;
 
+  @include breakpoint(mobile) {
+    background-color: #fff;
+  }
   @include blockWrapper;
 }
 
@@ -124,6 +127,11 @@
         font-weight: 500;
         font-size: 2rem;
         line-height: 120%;
+        color: #fff;
+
+        @include breakpoint(mobile) {
+          color: #000;
+        }
 
         @include breakpoint(mobile) {
           font-size: 3.2rem;
