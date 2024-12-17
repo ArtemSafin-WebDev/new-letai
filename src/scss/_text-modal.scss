@@ -110,6 +110,10 @@
   font-weight: 300;
   line-height: 2.2rem;
 
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+  }
+
   & > * {
     all: revert;
   }
@@ -120,6 +124,11 @@
     margin-bottom: 1rem;
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @include breakpoint(mobile) {
+      text-indent: 3.2rem;
+      margin-bottom: .6rem;
     }
   }
 }
