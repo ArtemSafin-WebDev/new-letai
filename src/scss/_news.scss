@@ -1,7 +1,7 @@
 .news {
   @include blockWrapper;
 
-  padding: 8rem 3rem 11.4rem;
+  padding: 6rem 3rem 11.4rem;
   background: #fff;
 
   @include breakpointMF(small-tablet) {

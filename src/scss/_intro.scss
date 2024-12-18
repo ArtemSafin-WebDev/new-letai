@@ -72,8 +72,8 @@
   display: flex;
   align-items: center;
   gap: 12rem;
-  padding: 2.4rem 3rem;
-  font-size: 4.8rem;
+  padding: 1.6rem 3rem;
+  font-size: 3.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 4.8rem;
@@ -92,8 +92,8 @@
     line-height: 1.2;
   }
   svg {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     flex-shrink: 0;
     object-fit: contain;
     overflow: visible;
@@ -106,7 +106,7 @@
 }
 
 .intro__form {
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   @include breakpoint(mobile) {
     margin-top: 2rem;
@@ -125,12 +125,12 @@
 }
 
 .intro__form-text {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 4rem;
   text-align: center;
-  margin-top: 3.2rem;
+  margin-top: 2.8rem;
   color: #000;
   font-family: var(--pt-root-ui);
 
@@ -157,9 +157,9 @@
   box-shadow: 0rem 0.25rem 0.6438rem 0rem #bfbfbf inset;
   backdrop-filter: blur(2px);
   padding: 0 2rem;
-  height: 6rem;
+  height: 4rem;
   width: 100%;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
@@ -184,7 +184,7 @@
 }
 
 .intro__form-submit {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
@@ -195,7 +195,7 @@
   border-radius: 2.5rem;
   background: #fe5000;
   box-shadow: 0rem 0.25rem 0.25rem 0rem #ffb990 inset;
-  min-height: 6rem;
+  min-height: 4rem;
   padding: 0.4rem 2rem;
   text-align: center;
   display: block;
@@ -217,10 +217,10 @@
 .intro__numpad {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 6.4rem;
-  grid-row-gap: 4rem;
+  grid-gap: 2.4rem;
+  grid-row-gap: 2rem;
   width: 100%;
-  max-width: 68.4rem;
+  max-width: 60rem;
   margin: 0 auto;
   margin-top: 3rem;
 
