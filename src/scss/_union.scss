@@ -90,6 +90,7 @@
   font-weight: 700;
   line-height: 100%;
   color: #fe5000;
+  text-align: center;
 
   @include breakpoint(mobile) {
     font-size: 2rem;
