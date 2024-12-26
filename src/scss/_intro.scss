@@ -19,6 +19,7 @@
   flex-direction: column;
   padding-top: 6.9rem;
   padding-bottom: 2rem;
+  justify-content: end;
 
   @include breakpoint(mobile) {
     padding-top: 3rem;
@@ -57,7 +58,7 @@
   }
 }
 .intro__win {
-  margin-top: 63rem;
+  margin-top: 78rem;
 
   @include breakpoint(mobile) {
     margin-top: 33rem;
