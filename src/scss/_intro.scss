@@ -3,6 +3,15 @@
   color: white;
   position: relative;
   z-index: 20;
+
+  @include breakpoint(mobile) {
+    background-image: linear-gradient(
+      to bottom,
+      #000248,
+      #000248 calc(85%),
+      transparent 100%
+    );
+  }
 }
 
 .intro__top-image {
@@ -466,7 +475,7 @@
   outline: none;
   appearance: none;
   border: none;
-  background: #f0f0f0 url("../images/select-arrow.svg") no-repeat right 2rem
+  background: white url("../images/select-arrow.svg") no-repeat right 2rem
     center;
   background-size: 3.2rem auto;
 
@@ -584,5 +593,295 @@
     width: 100%;
     height: 100%;
     overflow: visible;
+  }
+}
+
+.intro__goroscope-label {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0rem 0.25rem 0.6438rem 0rem #6cc5de inset,
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+  justify-content: space-evenly;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem;
+  color: black;
+  gap: 3rem;
+  margin-bottom: 6rem;
+
+  @include breakpoint(mobile) {
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 10.3px 0px #6cc5de inset,
+      0px 2.8px 19.8px 0px rgba(0, 0, 0, 0.25);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    gap: 0.3rem;
+    margin-bottom: 3rem;
+    padding-left: 0.5rem;
+  }
+  svg {
+    overflow: visible;
+    width: 12rem;
+    height: 12rem;
+    flex-shrink: 0;
+
+    @include breakpoint(mobile) {
+      width: 5rem;
+      height: 5rem;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.intro__goroscope-text-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+  margin-bottom: 6rem;
+
+  @include breakpoint(mobile) {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.intro__goroscope-title {
+  color: #fe5000;
+  text-align: center;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: white;
+  }
+}
+
+.intro__goroscope-text {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+  }
+}
+
+.intro__goroscope-rules {
+  border-radius: 3.3rem;
+  background: rgba(132, 198, 217, 0.46);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  color: black;
+  padding-top: 2rem;
+  margin-bottom: 6rem;
+
+  @include breakpoint(mobile) {
+    padding: 2rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.intro__goroscope-rules-title {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem;
+  color: #0dffff;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+}
+
+.intro__goroscope-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12rem;
+  grid-row-gap: 1rem;
+  list-style: revert;
+  list-style-position: inside;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 0.5rem;
+  }
+}
+
+.intro__goroscope-list-item {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: black;
+  &::before {
+    display: none;
+  }
+
+  @include breakpointMF(small-tablet) {
+    &:nth-child(odd) {
+      padding-right: 2rem;
+    }
+
+    &:nth-child(even) {
+      padding-left: 2rem;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.7rem;
+  }
+}
+
+.intro__goroscope-rules-row {
+  position: relative;
+
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  svg {
+    width: 10rem;
+    height: 10rem;
+    overflow: visible;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+
+    @include breakpoint(mobile) {
+      position: static;
+      transform: none;
+      order: 10;
+      width: 7rem;
+      height: 7rem;
+      margin-top: 1rem;
+      align-self: center;
+    }
+  }
+}
+
+.intro__goroscope-form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4.5rem;
+  max-width: 83.4rem;
+  margin: 0 auto;
+  margin-bottom: 7.2rem;
+
+  @include breakpoint(mobile) {
+    margin: 0;
+    max-width: none;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 6rem;
+  }
+}
+
+.intro__goroscope-roll {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "stack";
+  place-items: center;
+  width: 77rem;
+  margin: auto;
+
+  @include breakpoint(mobile) {
+    width: 100%;
+    padding-bottom: 10rem;
+  }
+}
+
+.intro__goroscope-roll-image {
+  grid-area: stack;
+  object-fit: contain;
+  height: auto;
+  width: 100%;
+  filter: invert(100%);
+  transition: transform 2s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  @include breakpoint(mobile) {
+    filter: none;
+  }
+}
+
+.intro__goroscope-roll-btn {
+  width: 34rem;
+  height: 34rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: white;
+  border-radius: 50rem;
+  background: #fe5000;
+  box-shadow: 0px 0.4rem 0.4rem 0px #ffb990 inset;
+  grid-area: stack;
+  z-index: 5;
+
+  @include breakpoint(mobile) {
+    width: 16rem;
+    height: 16rem;
+    fill: #fe5000;
+    box-shadow: 0px 4px 4px 0px #ffb990 inset;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+
+.intro__goroscope-form-heading {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem;
+  color: #fe5000;
+  margin-bottom: 6rem;
+  text-align: center;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
   }
 }
