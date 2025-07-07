@@ -7,9 +7,19 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &.steps--no-bg {
+    background-image: none;
+    margin-bottom: 10rem;
+  }
+
   @include breakpoint(mobile) {
     padding: 5rem 0;
     background-image: url("../images/steps-bg-mobile.svg");
+
+    &.steps--no-bg {
+      background-image: none;
+      margin-bottom: 5rem;
+    }
   }
 }
 
@@ -33,6 +43,15 @@
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 3rem;
+
+    .steps--no-bg & {
+      font-size: 3.6rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3.6rem;
+      text-align: center;
+      margin-bottom: 4.5rem;
+    }
   }
 }
 
@@ -71,6 +90,10 @@
   @include breakpoint(mobile) {
     grid-template-columns: 10rem 1fr;
     grid-gap: 2rem;
+
+    .steps--no-bg & {
+      grid-template-columns: 7rem 1fr;
+    }
   }
 }
 
@@ -100,6 +123,18 @@
       min-width: 6rem;
     }
   }
+
+  @include breakpoint(mobile) {
+    .steps--no-bg & {
+      margin-bottom: 1.5rem;
+      &::before {
+        font-size: 6.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.8;
+      }
+    }
+  }
 }
 
 .steps__card-icon {
@@ -111,6 +146,12 @@
   @include breakpoint(mobile) {
     width: 4rem;
     height: 4rem;
+
+    .steps--no-bg & {
+      position: relative;
+      left: -2rem;
+      bottom: -1rem;
+    }
   }
 }
 

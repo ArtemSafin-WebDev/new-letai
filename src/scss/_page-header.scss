@@ -1,6 +1,10 @@
 .page-header {
   background-color: #000;
 
+  .header-white & {
+    background-color: #fff;
+  }
+
   @include breakpoint(mobile) {
     background-color: #fff;
   }
@@ -135,6 +139,21 @@
 
         @include breakpoint(mobile) {
           font-size: 3.2rem;
+        }
+        @media (hover: hover) {
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+
+    .header-white & {
+      a {
+        color: black;
+        &:link,
+        &:visited {
+          color: black;
         }
         @media (hover: hover) {
           &:hover {

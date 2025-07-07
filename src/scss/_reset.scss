@@ -37,6 +37,9 @@ body {
   overflow-anchor: none;
 }
 
+body.grey-bg {
+  background-color: #ededed;
+}
 body.menu-open,
 body.modal-open {
   touch-action: none;

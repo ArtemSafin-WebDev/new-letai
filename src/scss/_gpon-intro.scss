@@ -1,0 +1,188 @@
+.gpon-intro {
+  @include blockWrapper;
+  padding-top: 3.7rem;
+  margin-bottom: 12rem;
+
+  @include breakpoint(mobile) {
+    padding-top: 0.7rem;
+    margin-bottom: 6rem;
+  }
+}
+
+.gpon-intro__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.gpon-intro__card {
+  position: relative;
+  isolation: isolate;
+  border-radius: 3rem;
+  display: grid;
+  grid-gap: 8rem;
+  grid-row-gap: 3.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas: "title title" "cube ." "numbers .";
+  overflow: hidden;
+  padding: 3.5rem;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 2.2rem;
+    grid-row-gap: 0.9rem;
+    border-radius: 0;
+    overflow: visible;
+    grid-template-areas: "title title" "cube cube" "numbers numbers";
+    padding: 0.6rem;
+  }
+}
+
+.gpon-intro__card-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  @include breakpoint(mobile) {
+    z-index: revert;
+    position: relative;
+    inset: revert;
+    aspect-ratio: 368 / 332;
+    grid-area: title;
+  }
+}
+
+.gpon-intro__card-bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gpon-intro__title {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  color: #fe5000;
+  padding: 2.4rem;
+  padding-top: 4rem;
+  padding-bottom: 5.2rem;
+  background-color: #fff;
+  grid-area: title;
+  border-radius: 3rem;
+
+  @include breakpoint(mobile) {
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+    padding: 1.2rem 1.6rem;
+    border-radius: 1rem;
+    margin: 0.6rem;
+    z-index: 5;
+    align-self: flex-start;
+  }
+}
+
+.gpon-intro__cube {
+  grid-area: cube;
+  overflow: hidden;
+  aspect-ratio: 518 / 239;
+  position: relative;
+  border-radius: 3rem;
+
+  @include breakpoint(mobile) {
+    border-radius: 1rem;
+    aspect-ratio: 369 / 108;
+  }
+}
+
+.gpon-intro__cube-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gpon-intro__list {
+  grid-area: numbers;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 3.5rem;
+
+  @include breakpoint(mobile) {
+    grid-gap: 2.2rem;
+    grid-auto-rows: 1fr;
+  }
+}
+
+.gpon-intro__list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.gpon-intro__numbers-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 3rem;
+  text-align: center;
+  color: #fe5000;
+  padding: 2.4rem;
+  padding-bottom: 3.2rem;
+
+  @include breakpoint(mobile) {
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    row-gap: 0;
+  }
+}
+
+.gpon-intro__numbers-card-amount {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  span {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    @include breakpoint(mobile) {
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+    }
+  }
+}
+
+.gpon-intro__numbers-card-text {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+}
