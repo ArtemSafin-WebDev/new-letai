@@ -10,3 +10,9 @@
     --content-padding: 1.6rem;
   }
 }
+
+.digital-week-page {
+  @include breakpoint(mobile) {
+    --content-padding: 4rem;
+  }
+}

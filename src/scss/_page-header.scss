@@ -7,6 +7,10 @@
 
   @include breakpoint(mobile) {
     background-color: #fff;
+
+    .digital-week-page & {
+      background-color: #000;
+    }
   }
   @include blockWrapper;
 }
