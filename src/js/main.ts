@@ -5,12 +5,14 @@ import menu from "./menu";
 import modals from "./modals";
 import forms from "./forms";
 import vacancies from "./vacancies";
+import bitrixForms from "./bitrixForms";
 
 document.addEventListener("DOMContentLoaded", () => {
   tariffsSlider();
   menu();
   modals();
   forms();
+  bitrixForms();
   vacancies();
 });
 
