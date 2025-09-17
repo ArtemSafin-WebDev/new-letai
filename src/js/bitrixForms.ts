@@ -28,8 +28,15 @@ export default function bitrixForms() {
               "Content-Type": "multipart/form-data",
             },
           })
-          .then(() => {
-            alert("Заявка отправлена!")
+          .then((res) => {
+              // @ts-ignore
+              if (res.data.error){
+                  alert(res.data.error);
+              }
+              else if (res.data.ID){
+                  alert("Ваш номер: " + res.data.ID + ". Сохраните номер до конца розыгрыша")
+              }
+
             if (form) {
               form.reset();
             }
