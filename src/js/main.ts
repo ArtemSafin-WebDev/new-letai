@@ -4,7 +4,7 @@ import tariffsSlider from "./tariffsSlider";
 import menu from "./menu";
 import modals from "./modals";
 import forms from "./forms";
-import vacancies from "./vacancies";
+// import vacancies from "./vacancies";
 import bitrixForms from "./bitrixForms";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   modals();
   forms();
   bitrixForms();
-  vacancies();
+  // vacancies();
 });
 
 window.addEventListener("load", () => {
