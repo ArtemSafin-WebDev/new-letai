@@ -1,0 +1,148 @@
+<section class="generation">
+    <div class="generation__content">
+        <div class="generation__card">
+            <div class="generation__card-wrapper nebo nebo--tl">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="/images/generation-mobile.webp" type="image/webp">
+                    <img alt="" class="generation__card-bg-image" src="/images/generation.webp">
+                </picture>
+                <div class="generation__card-text">
+                    Посмотрите, как бы вы выглядели в двух совершенно разных мирах: в <b>ностальгическом ретро стиле
+                    90-х или в футуристическом кибергороде будущего.</b>
+                </div>
+            </div>
+            <div class="generation__card-years">
+                137 лет на связи
+            </div>
+        </div>
+        <div class="generation__text">
+            <p>
+                Как принять участие:
+            </p>
+            <ol>
+                <li>
+                    Загрузите фотографию, где хорошо видно ваше лицо.
+                </li>
+                <li>
+                    Выберите стиль обработки: ретро-телеком 90-х или 5G кибербудущее.
+                </li>
+                <li>
+                    Подождите, пока нейросеть преобразит фото.
+                </li>
+                <li>
+                    Получите готовое изображение!
+                </li>
+            </ol>
+            <p>
+                Важно: каждому сотруднику доступна только две обработки.
+            </p>
+        </div>
+        <form action="/" class="generation__form" method="POST">
+            <div class="generation__form-col">
+                <div class="generation__form-step">
+                    <div class="generation__form-step-name">
+                        Шаг 1
+                    </div>
+                    <div class="generation__form-input-wrapper">
+                        <input class="generation__form-input" name="email" placeholder="Введите Ваш Email" required
+                               type="email">
+                    </div>
+                </div>
+                <div class="generation__form-step">
+                    <div class="generation__form-step-name">
+                        Шаг 2
+                    </div>
+                    <div class="generation__form-input-wrapper">
+                        <label class="generation__form-file-loader js-file-upload">
+                            <input accept="image/*" class="generation__form-file-input" name="file" required
+                                   type="file">
+                            <span class="generation__form-file-loader-content">
+                                <span class="generation__form-file-loader-text js-file-upload-text">
+                                     Загрузить изображение
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="generation__form-step">
+                    <div class="generation__form-step-name">
+                        Шаг 4
+                    </div>
+                    <button class="generation__form-submit" type="submit">
+                        Выполнить обработку
+                    </button>
+                </div>
+            </div>
+            <div class="generation__form-col">
+                <div class="generation__form-step">
+                    <div class="generation__form-step-name">
+                        Шаг 3
+                    </div>
+                    <div class="generation__form-radios">
+                        <label class="generation__form-radio">
+                            <input checked="" class="generation__form-radio-input" name="style" type="radio"
+                                   value="retro">
+                            <span class="generation__form-radio-mark">
+
+                            </span>
+                            <span class="generation__form-radio-text">
+                                Ретро-телеком
+                            </span>
+                        </label>
+                        <label class="generation__form-radio">
+                            <input class="generation__form-radio-input" name="style" type="radio" value="5g">
+                            <span class="generation__form-radio-mark">
+
+                            </span>
+                            <span class="generation__form-radio-text">
+                               5G кибербудущее
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<div class="generation__modal js-modal" id="generation-modal-in-progress">
+    <div class="generation__modal-inner">
+        <button class="generation__modal-close" type="button">
+            <svg height="14" width="14">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <div class="generation__modal-phrases">
+            <img alt="" class="generation__modal-bg" src="/images/generation/bg.webp">
+            <div class="generation__modal-phrases-text active">
+                Фиксируем изображение в растворе…
+            </div>
+            <div class="generation__modal-phrases-text">
+                Проявляем свежий негатив…
+            </div>
+        </div>
+        <a class="generation__modal-download-btn" href="#">
+            <svg height="14" width="14">
+                <use xlink:href="#download"></use>
+            </svg>
+            Скачать изображение
+        </a>
+    </div>
+</div>
+
+<div class="generation__modal js-modal" id="generation-modal-failed">
+    <div class="generation__modal-inner">
+        <button class="generation__modal-close js-modal-close" type="button">
+            <svg height="14" width="14">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <div class="generation__modal-text">
+            Похоже пленка засветилась, попробуйте заново
+        </div>
+        <a class="generation__modal-link js-modal-close" href="#">
+            Закрыть это окно
+        </a>
+    </div>
+</div>

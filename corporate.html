@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
+<head>
     {{> meta }}
-  </head>
+</head>
 
-  <body>
-    {{> header-2 }}
-    <main class="page-main">
-      {{> intro }}
-      {{> news }}
-      {{> poll }}
-      {{> vacancies }}
-      {{> union }}
-      {{> codes }}
-    </main>
-    {{> footer }}
-    {{> modals }}
-    {{> win-modal }}
-    {{> text-modal }}
-    {{> quiz-modals }}
-    <script type="module" src="/src/js/main.ts"></script>
-  </body>
+<body>
+{{> header-2 }}
+<main class="page-main">
+    {{> intro }}
+    {{> generation }}
+    {{> news }}
+    {{> poll }}
+    {{> vacancies }}
+    {{> union }}
+    {{> codes }}
+</main>
+{{> footer }}
+{{> modals }}
+{{> win-modal }}
+{{> text-modal }}
+{{> quiz-modals }}
+<script src="/src/js/main.ts" type="module"></script>
+</body>
 
 </html>

@@ -6,16 +6,18 @@ import modals from "./modals";
 import forms from "./forms";
 // import vacancies from "./vacancies";
 import bitrixForms from "./bitrixForms";
+import fileUpload from "./fileUpload.ts";
 
 document.addEventListener("DOMContentLoaded", () => {
-  tariffsSlider();
-  menu();
-  modals();
-  forms();
-  bitrixForms();
-  // vacancies();
+    tariffsSlider();
+    menu();
+    modals();
+    forms();
+    bitrixForms();
+    fileUpload();
+    // vacancies();
 });
 
 window.addEventListener("load", () => {
-  document.body.classList.add("loaded");
+    document.body.classList.add("loaded");
 });
