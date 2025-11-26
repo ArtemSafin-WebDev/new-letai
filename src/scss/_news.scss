@@ -9,6 +9,7 @@
   }
 
   @include breakpoint(mobile) {
+    padding: 0;
     padding-bottom: 4rem;
     padding-top: 2.2rem;
   }
@@ -74,36 +75,36 @@
 
   background: rgba(120, 240, 190, 0.4);
   box-shadow: 0rem 0.25rem 0.6438rem 0rem #00865b inset,
-    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+  0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
 
   &--violet {
     background: rgba(210, 180, 234, 0.4);
     box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(135, 77, 191, 0.83) inset,
-      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
   }
 
   &--lightgreen {
     background: rgba(212, 239, 220, 0.4);
     box-shadow: 0rem 0.25rem 0.6438rem 0rem #00865b inset,
-      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
   }
 
   &--blue {
     background: rgba(180, 220, 249, 0.4);
     box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(51, 144, 229, 0.51) inset,
-      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
   }
 
   &--orange {
     background: rgba(254, 80, 0, 0.4);
     box-shadow: 0rem 0.25rem 0.6438rem 0rem #fe5000 inset,
-      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
   }
 
   &--darkviolet {
     background: rgba(135, 77, 191, 0.4);
     box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(135, 77, 191, 0.83) inset,
-      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
   }
 
   &--with-image {
@@ -115,14 +116,14 @@
     border-radius: 1rem;
     background: rgba(120, 240, 190, 0.4);
     box-shadow: 0rem 0.25rem 0.6438rem 0rem #00865b inset,
-      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+    0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
     order: 1;
     grid-column: span 3;
     &--blue {
       order: 3;
       background: rgba(180, 220, 249, 0.4);
       box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(51, 144, 229, 0.51) inset,
-        0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
     }
 
     &--with-image {
@@ -142,7 +143,7 @@
     &--lightgreen {
       background: rgba(212, 239, 220, 0.4);
       box-shadow: 0rem 0.25rem 0.6438rem 0rem #00865b inset,
-        0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
       order: 5;
     }
 
@@ -150,15 +151,16 @@
       order: 6;
       background: rgba(135, 77, 191, 0.4);
       box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(135, 77, 191, 0.83) inset,
-        0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
     }
 
     &--violet {
       background: rgba(210, 180, 234, 0.4);
       box-shadow: 0rem 0.25rem 0.6438rem 0rem rgba(135, 77, 191, 0.83) inset,
-        0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
       order: 7;
       grid-column: span 4;
+
       .news__card-icon-container {
         aspect-ratio: 200 / 108;
       }
@@ -169,7 +171,7 @@
 
       background: rgba(254, 80, 0, 0.4);
       box-shadow: 0rem 0.25rem 0.6438rem 0rem #fe5000 inset,
-        0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
+      0rem 0.175rem 1.2375rem 0rem rgba(0, 0, 0, 0.25);
     }
   }
 }
