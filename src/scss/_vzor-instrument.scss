@@ -1,0 +1,245 @@
+.vzor-instrument {
+  @include blockWrapper;
+  padding-bottom: 3.6rem;
+  padding-top: 5rem;
+  background-color: #000;
+  color: white;
+
+  @include breakpoint(mobile) {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+.vzor-instrument__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.vzor-instrument__title {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-bottom: -4rem;
+  margin-top: 2rem;
+
+  @include breakpoint(mobile) {
+    margin: 0;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    order: -20;
+  }
+}
+
+.vzor-instrument__card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.vzor-instrument__card-illustration {
+  position: absolute;
+  width: 20rem;
+  right: 0;
+  top: 0;
+  margin-right: 4rem;
+  z-index: 10;
+  margin-top: 1rem;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.vzor-instrument__card-top {
+  height: 12rem;
+  width: 38rem;
+  background-color: #fff;
+  border-top-left-radius: 2.7rem;
+  border-top-right-radius: 2.7rem;
+  margin-left: auto;
+  mask: url('../images/vzor-instrument-corner.svg'), linear-gradient(to right, transparent 0%, transparent 15rem, black 15rem, black 100%);
+  mask-repeat: no-repeat;
+  mask-size: auto 100%;
+  mask-position: left top;
+  mask-composite: add;
+  margin-bottom: -0.5px;
+
+  @include breakpoint(mobile) {
+    all: revert;
+    box-sizing: border-box;
+    display: contents;
+  }
+}
+
+.vzor-instrument__card-bottom {
+  border-radius: 2.7rem;
+  background-color: #fff;
+  color: black;
+  min-height: 60rem;
+  border-top-right-radius: 0;
+  padding: 2.4rem;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+
+  @include breakpoint(mobile) {
+    all: revert;
+    box-sizing: border-box;
+    display: contents;
+  }
+}
+
+.vzor-instrument__card-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 4rem;
+  @include breakpoint(mobile) {
+    display: contents;
+  }
+}
+
+.vzor-instrument__card-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @include breakpoint(mobile) {
+    display: contents;
+  }
+}
+
+.vzor-instrument__card-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  @include breakpoint(mobile) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.vzor-instrument__card-btn {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.2rem;
+  color: white;
+  padding: 2rem 2.8rem;
+  border-radius: 2.7rem;
+  background: #FE5000;
+  color: white;
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.2rem;
+  }
+}
+
+.vzor-instrument__card-text {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+  margin-top: auto;
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.vzor-instrument__card-image-wrapper {
+  @include breakpoint(mobile) {
+    order: -10;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    &::before {
+      content: '';
+      display: block;
+      width: 12.5rem;
+      height: 3.2rem;
+      background-color: #fff;
+      border-top-left-radius: 2.7rem;
+      border-top-right-radius: 2.7rem;
+      margin-left: auto;
+      margin-bottom: -.5px;
+      mask: url('../images/vzor-instrument-corner-mobile.svg'), linear-gradient(to right, transparent 0%, transparent 6rem, black 6rem, black 100%);
+      mask-repeat: no-repeat;
+      mask-size: auto 100%;
+      mask-position: left top;
+    }
+
+  }
+}
+
+.vzor-instrument__card-image-wrapper-bg {
+  @include breakpoint(mobile) {
+    padding: 4.5rem 2.4rem;
+    border-radius: 2.7rem;
+    background: white;
+    border-top-right-radius: 0;
+  }
+}
+
+.vzor-instrument__card-image-container {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 573 / 382;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: .2rem solid #FE5000;
+    border-radius: inherit;
+  }
+}
+
+.vzor-instrument__card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vzor-instrument__card-remark {
+  display: block;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+  margin-top: 7rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: #FE5000;
+    margin: 0;
+  }
+}

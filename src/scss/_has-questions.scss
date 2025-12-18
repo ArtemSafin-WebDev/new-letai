@@ -9,6 +9,12 @@
     padding-top: 0;
   }
 
+  &--dark {
+    padding-top: 8rem;
+    background: #2B2B2B;
+    color: white;
+  }
+
   @include breakpoint(mobile) {
     background: #2b2b2b;
     color: white;
@@ -100,9 +106,21 @@
   border-radius: 1rem;
   color: black;
   transition: color 0.2s, border-color 0.2s;
+
   &::placeholder {
     color: black;
   }
+
+  .has-questions--dark & {
+    background: transparent;
+    border-color: white;
+    color: white;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
   @include breakpoint(mobile) {
     height: 7.5rem;
     border: 2px solid #ffffff;
@@ -160,6 +178,12 @@
 
   display: grid;
   place-items: center;
+
+  .has-questions--dark & {
+    border-color: white;
+    background: transparent;
+  }
+
   &::before {
     content: "";
     width: 1.4rem;
@@ -171,7 +195,7 @@
 }
 
 .has-questions__form-policy-checkbox-input:checked
-  ~ .has-questions__form-policy-checkbox-mark {
+~ .has-questions__form-policy-checkbox-mark {
   &::before {
     opacity: 1;
   }
@@ -205,6 +229,7 @@
     line-height: 3.8rem;
     align-self: stretch;
   }
+
   &:link,
   &:visited {
     color: white;

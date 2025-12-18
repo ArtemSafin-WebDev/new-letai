@@ -7,6 +7,7 @@ import forms from "./forms";
 // import vacancies from "./vacancies";
 import bitrixForms from "./bitrixForms";
 import fileUpload from "./fileUpload.ts";
+import accordions from "./accordions.ts";
 
 document.addEventListener("DOMContentLoaded", () => {
     tariffsSlider();
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     forms();
     bitrixForms();
     fileUpload();
+    accordions();
     // vacancies();
 });
 

@@ -1,0 +1,120 @@
+.vzor-result {
+  @include blockWrapper;
+  padding-top: 4rem;
+  padding-bottom: 16rem;
+  background-color: #000;
+  color: white;
+
+  @include breakpoint(mobile) {
+    padding-top: 2.4rem;
+    padding-bottom: 7.4rem;
+  }
+}
+
+.vzor-result__content {
+  @include blockContent;
+
+}
+
+.vzor-result__top-row {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  margin-bottom: 4.8rem;
+  @include breakpoint(mobile) {
+    display: block;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.vzor-result__heading {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  @include breakpoint(mobile) {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: #FE5000;
+  }
+}
+
+.vzor-result__arrows {
+  width: 22.5rem;
+  height: auto;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.vzor-result__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  @include breakpoint(mobile) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1.2rem;
+    grid-row-gap: 3rem;
+  }
+}
+
+.vzor-result__list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.vzor-result__card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 2.7rem;
+  @include breakpoint(mobile) {
+    border-radius: 1.5rem;
+  }
+}
+
+.vzor-result__card-title {
+  padding: 3.2rem 2.4rem;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #FE5000;
+  text-wrap: balance;
+  @include breakpoint(mobile) {
+    padding: 1.2rem 1rem;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6rem;
+  }
+}
+
+.vzor-result__card-image-container {
+  aspect-ratio: 16 / 9;
+  border-radius: 2.7rem;
+  overflow: hidden;
+  background-color: #FE5000;
+  position: relative;
+  margin-top: auto;
+  display: grid;
+  place-items: center;
+  @include breakpoint(mobile) {
+    border-radius: 1.5rem;
+  }
+}
+
+.vzor-result__card-image {
+  height: 80%;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}

@@ -1,0 +1,212 @@
+.vzor-intro {
+  @include blockWrapper;
+  background-color: #000;
+  color: white;
+  padding-top: 2.4rem;
+  padding-bottom: 6.2rem;
+  color: white;
+
+  @include breakpoint(mobile) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.vzor-intro__content {
+  @include blockContent;
+}
+
+
+.vzor-intro__wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: 'stack';
+
+  @include breakpoint(mobile) {
+    grid-template-areas: revert;
+  }
+}
+
+.vzor-intro__card-title {
+  grid-area: stack;
+  z-index: 5;
+  color: rgba(0, 0, 0, 0.00);
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: #FFF;
+  font-size: 12.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.2rem;
+  align-items: flex-start;
+  justify-self: flex-start;
+  margin-left: 1.7rem;
+  margin-top: 4rem;
+
+  @include breakpoint(mobile) {
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-left: 1.2rem;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+.vzor-intro__card {
+  grid-area: stack;
+  position: relative;
+  aspect-ratio: 1238 / 762;
+
+  @include breakpoint(mobile) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    aspect-ratio: revert;
+  }
+}
+
+.vzor-intro__card-bg {
+  position: absolute;
+  inset: 0;
+
+  @include breakpoint(mobile) {
+    position: static;
+  }
+
+}
+
+.vzor-intro__card-bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include breakpoint(mobile) {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.vzor-intro__btn {
+  z-index: 6;
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: block;
+  text-align: center;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 1.6rem 3rem;
+  color: #FE5000;
+  grid-area: stack;
+  z-index: 6;
+  background-color: white;
+  border-radius: 2.7rem;
+
+  &:link,
+  &:visited {
+    color: #FE5000;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 1.4rem 2.8rem;
+    grid-area: revert;
+    align-self: stretch;
+    justify-self: stretch;
+  }
+}
+
+.vzor-intro__text-content {
+  grid-area: stack;
+  align-self: flex-end;
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.4rem;
+  margin-bottom: 4rem;
+  color: white;
+  max-width: 79rem;
+  gap: 1.4rem;
+  z-index: 10;
+
+  @include breakpoint(mobile) {
+    max-width: none;
+    margin: 0;
+    margin-bottom: 3.5rem;
+    grid-area: revert;
+  }
+}
+
+.vzor-intro__heading {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.5rem;
+  text-transform: uppercase;
+  @include breakpoint(mobile) {
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+  }
+}
+
+.vzor-intro__text {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem;
+  }
+}
+
+.vzor-intro__soon {
+  grid-area: stack;
+  z-index: 6;
+  align-self: flex-start;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-right: 3rem;
+  margin-top: 6rem;
+  width: 35rem;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.vzor-intro__soon-title {
+  font-size: 3.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+.vzor-intro__soon-text {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.3rem;
+  padding: .2rem 2.4rem;
+  border-radius: 3rem;
+  background: #FFF;
+  color: black;
+}
