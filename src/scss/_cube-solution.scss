@@ -1,0 +1,156 @@
+.cube-solution {
+  @include blockWrapper;
+  padding-top: 6rem;
+  padding-bottom: 5.8rem;
+  background: linear-gradient(270deg, #FFF 33.17%, #F1F1F1 70.67%);
+
+  @include breakpoint(mobile) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(270deg, #FFF 33.17%, #F1F1F1 70.67%);
+  }
+}
+
+.cube-solution__content {
+  @include blockContent;
+}
+
+.cube-solution__heading {
+  margin-bottom: 8rem;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.5rem;
+  color: #FE5000;
+  text-wrap: balance;
+
+  @include breakpoint(mobile) {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.cube-solution__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2.4rem;
+  grid-row-gap: 3.2rem;
+  @include breakpoint(mobile) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 1.2rem;
+  }
+}
+
+.cube-solution__list-item {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(mobile) {
+    &:has(.cube-solution__card--orange) {
+      order: -20;
+    }
+  }
+}
+
+.cube-solution__card {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 2rem;
+  border-radius: 2.7rem;
+  background: #EEE;
+  box-shadow: 0 0.27rem 1.98rem 0 rgba(182, 182, 182, 0.25) inset;
+  color: black;
+  gap: 2rem;
+
+  &:has(.cube-solution__card-icon:only-child) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--orange {
+    background-color: #FE5000;
+    color: white;
+
+  }
+
+  @include breakpoint(mobile) {
+    padding: 1.6rem 2rem;
+    border-radius: 1.5rem;
+    background: #EEE;
+    box-shadow: 0 0.27rem 1.98rem 0 rgba(182, 182, 182, 0.25) inset;
+    gap: 1rem;
+    &--orange {
+      background-color: #FE5000;
+      color: white;
+
+    }
+
+  }
+}
+
+.cube-solution__card-icon {
+  flex-shrink: 0;
+
+  .cube-solution__list-item:nth-child(3n) & {
+    order: 20;
+
+    @include breakpoint(mobile) {
+      order: 0;
+    }
+  }
+}
+
+.cube-solution__card-icon-image {
+  width: auto;
+  height: 9rem;
+  object-fit: contain;
+
+  @include breakpoint(mobile) {
+    height: 6rem;
+    width: 6rem;
+    flex-shrink: 0;
+
+  }
+}
+
+.cube-solution__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  @include breakpoint(mobile) {
+    gap: .6rem;
+  }
+}
+
+.cube-solution__card-title {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
+}
+
+.cube-solution__card-text {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #FE5000;
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}

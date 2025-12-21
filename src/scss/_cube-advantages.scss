@@ -1,0 +1,205 @@
+.cube-advantages {
+  @include blockWrapper;
+  padding-bottom: 2.4rem;
+  padding-top: 1.3rem;
+  background: linear-gradient(270deg, #FFF 33.17%, #F1F1F1 70.67%);
+  @include breakpoint(mobile) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(270deg, #FFF 33.17%, #F1F1F1 70.67%);
+  }
+}
+
+.cube-advantages__content {
+  @include blockContent;
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cube-advantages__card {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 2rem 3.5rem;
+  position: relative;
+  z-index: 1;
+  @include breakpoint(mobile) {
+    all: revert;
+    box-sizing: border-box;
+    display: contents;
+  }
+
+}
+
+.cube-advantages__card-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: #EEE;
+  border-radius: 2.7rem;
+  box-shadow: -0.4rem -0.4rem 1.6rem 0 rgba(203, 203, 203, 0.25) inset, 0 0.4rem 1.6rem 0 rgba(203, 203, 203, 0.25) inset;
+  --nb-r: 2.7rem;
+  --nb-w: 68rem;
+  --nb-h: 6rem;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.cube-advantages__card-left-col {
+  width: 30%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(mobile) {
+    display: contents;
+  }
+}
+
+.cube-advantages__card-right-col {
+  width: 43.6rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(mobile) {
+    width: auto;
+    gap: 4rem;
+    padding: 2.5rem;
+    background-color: #EEE;
+    box-shadow: -0.4rem -0.4rem 1.6rem 0 rgba(203, 203, 203, 0.25) inset, 0 0.4rem 1.6rem 0 rgba(203, 203, 203, 0.25) inset;
+    padding-bottom: 4rem;
+    border-radius: 2.7rem;
+    overflow: hidden;
+  }
+}
+
+.cube-advantages__heading {
+  color: #FE5000;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.5rem;
+  margin-top: 2rem;
+  margin-left: -3.5rem;
+  margin-bottom: 7rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.cube-advantages__text {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.8rem;
+
+  p, ul, ol {
+    margin-top: 1rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    order: 30;
+    margin-top: 2.4rem;
+  }
+}
+
+.cube-advantages__card-wi-fi {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: #FE5000;
+  margin-bottom: 5rem;
+
+
+  img {
+    flex-shrink: 0;
+    width: 5.1rem;
+    height: 6.9rem;
+    object-fit: contain;
+  }
+
+  @include breakpoint(mobile) {
+    gap: 2.4rem;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    align-items: flex-end;
+    margin: 0;
+    align-self: flex-start;
+
+    img {
+      width: 5.1rem;
+      height: 6.9rem;
+    }
+  }
+}
+
+.cube-advantages__features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.cube-advantages__features-card {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 1.6rem 2rem;
+  border-radius: 2.7rem;
+  background: #FFF;
+  box-shadow: 0 0.27rem 1.94rem 0 rgba(0, 0, 0, 0.25);
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+
+
+  img {
+    flex-shrink: 0;
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 1.4rem 2rem;
+    border-radius: 1.5rem;
+    background: #FFF;
+    box-shadow: 0 0.28rem 1.94rem 0 rgba(0, 0, 0, 0.25);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    gap: 1.6rem;
+    //img {
+    //  width: 5rem;
+    //  height: 5rem;
+    //}
+
+  }
+}

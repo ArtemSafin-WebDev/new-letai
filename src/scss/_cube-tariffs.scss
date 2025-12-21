@@ -1,0 +1,365 @@
+.cube-tariffs {
+  @include blockWrapper;
+  padding-bottom: 7.8rem;
+  background: linear-gradient(180deg, #FE5000 0%, #FFB990 100%);
+  color: white;
+  padding-top: 5rem;
+
+
+  @include breakpoint(mobile) {
+    padding-top: 1.3rem;
+    padding-bottom: 3.4rem;
+   
+    background-image: linear-gradient(180deg, #FE5000 0%, #FFB990 100%);
+  }
+}
+
+.cube-tariffs__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.cube-tariffs__heading {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.5rem;
+  margin-bottom: 5.4rem;
+
+  @include breakpoint(mobile) {
+    text-align: center;
+    color: black;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.5rem;
+    margin-bottom: 1.4rem;
+  }
+}
+
+.cube-tariffs__slider {
+
+  @include breakpoint(mobile) {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .swiper {
+    overflow: visible;
+    @include breakpoint(mobile) {
+      overflow: hidden;
+    }
+  }
+
+  .swiper-slide {
+    grid-template-rows: subgrid;
+    height: auto;
+    box-sizing: border-box;
+    grid-row: span 4;
+    display: contents;
+
+    @include breakpoint(mobile) {
+      display: grid;
+    }
+  }
+
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 2rem;
+    grid-row-gap: 3.2rem;
+
+
+    @include breakpoint(mobile) {
+      grid-gap: 0;
+      grid-auto-flow: column;
+      grid-template-columns: revert;
+    }
+  }
+}
+
+.cube-tariffs__slider-wrapper {
+  @include breakpoint(mobile) {
+    width: 30%;
+    flex-grow: 1;
+  }
+}
+
+.cube-tariffs__slider-arrow {
+  display: none;
+  @include breakpoint(mobile) {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 40;
+    transition: opacity 0.2s;
+
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &--prev {
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 1.2rem 2rem 1.2rem 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    &--next {
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 1.2rem 0 1.2rem 2rem;
+      border-color: transparent transparent transparent white;
+    }
+  }
+}
+
+
+.cube-tariffs__slider-card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 4rem 3rem;
+  border-radius: 1rem;
+  background: #FFF8F8;
+  box-shadow: 0 0.27rem 1.98rem 0 rgba(0, 0, 0, 0.25);
+  color: black;
+  grid-gap: 3rem;
+  grid-row: span 4;
+  align-items: flex-start;
+
+
+  @include breakpoint(mobile) {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0 0.27rem 1.98rem 0 rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+  }
+
+  &--wide {
+    grid-column: span 2;
+    @include breakpoint(mobile) {
+      grid-column: span 1;
+    }
+  }
+}
+
+.cube-tariffs__slider-card-top {
+  grid-row: 1 / 2;
+  text-align: center;
+
+}
+
+.cube-tariffs__slider-card-title {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #FE5000;
+  margin: 0 -2rem;
+
+  @include breakpoint(mobile) {
+    margin: 0;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+
+  }
+}
+
+.cube-tariffs__slider-card-service-name {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+}
+
+.cube-tariffs__slider-card-features-list {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.6rem;
+
+  .cube-tariffs__slider-card--wide & {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    @include breakpoint(mobile) {
+      grid-template-columns: minmax(0, 1fr);
+      grid-gap: 1.2rem;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 1.2rem;
+  }
+}
+
+.cube-tariffs__slider-card-features-item {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+}
+
+.cube-tariffs__slider-card-features-item-icon {
+  flex-shrink: 0;
+  object-fit: contain;
+  width: 4rem;
+  height: 4rem;
+
+}
+
+.cube-tariffs__slider-card-features-item-content {
+
+}
+
+.cube-tariffs__slider-card-features-item-title {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6rem;
+  }
+}
+
+.cube-tariffs__slider-card-features-item-description {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6rem;
+  }
+}
+
+.cube-tariffs__slider-card-price {
+  grid-row: 3 / 4;
+  align-self: center;
+  text-align: center;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+
+  @include breakpoint(mobile) {
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    align-self: stretch;
+    text-align: left;
+  }
+
+  span {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    @include breakpoint(mobile) {
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+    }
+  }
+}
+
+.cube-tariffs__slider-card-bottom {
+  grid-row: 4 / 5;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.cube-tariffs__slider-card-link {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #FFF8F8;
+  padding: 1.8rem 4rem;
+  border-radius: 0.3rem;
+  background: #FE5000;
+
+  &:link,
+  &:visited {
+    color: #FFF8F8;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    padding: 1.8rem 3.6rem;
+    border-radius: .3rem;
+  }
+}
+
+.cube-tariffs__slider-card-remark {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+}
+
+.cube-tariffs__show-all {
+  align-self: center;
+  text-align: center;
+  padding: 1.8rem 5rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  border-radius: 2.7rem;
+  background: #FE5000;
+  color: white;
+  transition: background-color .2s, color .2s;
+  margin-top: 6rem;
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    padding: 1.8rem 5rem;
+    border-radius: .3rem;
+    margin-top: 2rem;
+  }
+}
