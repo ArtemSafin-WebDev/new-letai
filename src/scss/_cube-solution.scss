@@ -49,6 +49,31 @@
   flex-direction: column;
 
   @include breakpoint(mobile) {
+    &:nth-child(1) {
+      order: 0;
+    }
+    &:nth-child(2) {
+      order: 30;
+    }
+    &:nth-child(3) {
+      order: 50;
+    }
+    &:nth-child(4) {
+      order: 10;
+    }
+    &:nth-child(6) {
+      order: 60;
+    }
+    &:nth-child(7) {
+      order: 20;
+    }
+    &:nth-child(8) {
+      order: 40;
+    }
+    &:nth-child(9) {
+      order: 70;
+    }
+
     &:has(.cube-solution__card--orange) {
       order: -20;
     }
@@ -78,7 +103,7 @@
   }
 
   @include breakpoint(mobile) {
-    padding: 1.6rem 2rem;
+    padding: 1.6rem 1.7rem;
     border-radius: 1.5rem;
     background: #EEE;
     box-shadow: 0 0.27rem 1.98rem 0 rgba(182, 182, 182, 0.25) inset;
