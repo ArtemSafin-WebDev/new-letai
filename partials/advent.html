@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </a>
-                <a class="advent__card locked" href="#">
+                <a class="advent__card locked" href="#advent-modal-galactic">
                     <picture>
                         <source media="(max-width: 640px)" srcset="/images/advent-cards/2-mobile.webp"/>
                         <img alt="" class="advent__card-image" src="/images/advent-cards/2.webp">
@@ -488,6 +488,169 @@
                     </p>
                 </div>
                 <img alt="" class="advent-modal__gifts-image" src="/images/advent-gifts.webp">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="advent-modal js-modal" id="advent-modal-galactic">
+    <div class="advent-modal__inner">
+        <picture>
+            <source media="(max-width: 640px)" srcset="/images/advent-modal-mobile.svg"/>
+            <img alt="" class="advent-modal__image" src="/images/advent-modal.svg">
+        </picture>
+        <div class="advent-modal__content">
+            <div class="advent-modal__date">
+                25 декабря
+            </div>
+            <div class="advent-modal__galactic">
+                <div class="advent-modal__galactic-title">
+                    Калькулятор галактических секунд.
+                </div>
+                <form action="/" class="advent-modal__galactic-form" method="POST">
+                    <div class="advent-modal__galactic-form-inner">
+
+
+                        <div class="advent-modal__galactic-form-text">
+                            <p>
+                                Узнай свой галактический возраст!🚀Дорогие коллеги!
+                            </p>
+                            <p>
+                                Сегодня мы отправляемся в космическое
+                                путешествие — узнаем ваш галактический возраст!
+                            </p>
+                            <p>
+                                Просто укажите дату рождения, и система
+                                посчитает, сколько галактических секунд и миллисекунд вы уже накопили. Научность не
+                                гарантируем — зато гарантируем дозу новогоднего настроения!
+                            </p>
+                            <p>
+                                А в финале — сюрприз: гороскоп на грядущий год. Может, звёзды подскажут что‑то важное?
+                                💫
+                            </p>
+                        </div>
+                        <div class="advent-modal__galactic-form-inputs">
+                            <div class="advent-modal__galactic-form-inputs-label">
+                                Введите свою дату рождения:
+                            </div>
+                            <div class="advent-modal__galactic-form-inputs-wrapper">
+                                <input inputmode="numeric" maxlength="1">
+                                <input inputmode="numeric" maxlength="1">
+                                <span>.</span>
+
+                                <input inputmode="numeric" maxlength="1">
+                                <input inputmode="numeric" maxlength="1">
+                                <span>.</span>
+
+                                <input inputmode="numeric" maxlength="1">
+                                <input inputmode="numeric" maxlength="1">
+                                <input inputmode="numeric" maxlength="1">
+                                <input inputmode="numeric" maxlength="1">
+                            </div>
+                            <input id="birthdate" name="birthdate" type="hidden">
+                        </div>
+                    </div>
+                    <button class="advent-modal__galactic-form-submit" type="submit">
+                        Выполнить расчет
+                    </button>
+                </form>
+                <div class="advent-modal__galactic-remark">
+                    *Галактический год - период, за который наша солнечная система совершает 1 оборот вокруг центра
+                    галактики.
+                </div>
+                <img alt="" class="advent-modal__galactic-illustration" src="/images/galactic.webp">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="advent-modal js-modal" id="advent-modal-goroscrope">
+    <div class="advent-modal__inner">
+        <picture>
+            <source media="(max-width: 640px)" srcset="/images/advent-modal-mobile.svg"/>
+            <img alt="" class="advent-modal__image" src="/images/advent-modal.svg">
+        </picture>
+        <div class="advent-modal__content">
+            <div class="advent-modal__date">
+                25 декабря
+            </div>
+            <div class="advent-modal__goroscope">
+                <div class="advent-modal__goroscope-large-title">
+                    Калькулятор галактических секунд.
+                </div>
+                <div class="advent-modal__goroscope-card">
+                    <div class="advent-modal__goroscope-title">
+                        Что вас ждёт в 2026 году?
+                    </div>
+                    <div class="advent-modal__goroscope-sign">
+                        Овен
+                    </div>
+                    <div class="advent-modal__goroscrope-text">
+                        Год динамичного карьерного роста: во втором квартале ждите повышения или большого проекта, где
+                        ваша
+                        энергия засияет. Деньги стабилизируются, если вкладывать в обучение, а не в авантюры. В
+                        отношениях
+                        возможны споры из-за импульсов — честные разговоры летом всё укрепят. Здоровье требует баланса:
+                        больше спорта и сна, чтобы не перегореть. Личный рост через лидерство — учитесь доверять
+                        команде.
+                    </div>
+                </div>
+                <img alt="" class="advent-modal__goroscope-image" src="/images/goroscope.webp">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="advent-modal js-modal" id="advent-modal-galactic-result">
+    <div class="advent-modal__inner">
+        <picture>
+            <source media="(max-width: 640px)" srcset="/images/advent-modal-mobile.svg"/>
+            <img alt="" class="advent-modal__image" src="/images/advent-modal.svg">
+        </picture>
+        <div class="advent-modal__content">
+            <div class="advent-modal__date">
+                25 декабря
+            </div>
+            <div class="advent-modal__galactic">
+                <div class="advent-modal__galactic-title">
+                    Калькулятор галактических секунд.
+                </div>
+                <div class="advent-modal__galactic-result">
+                    <div class="advent-modal__galactic-result-wrapper">
+                        <div class="advent-modal__galactic-result-title">
+                            Вам:
+                        </div>
+                        <div class="advent-modal__galactic-result-items">
+                            <div class="advent-modal__galactic-result-item">
+                                <div class="advent-modal__galactic-result-item-key">
+                                    4
+                                </div>
+                                <div class="advent-modal__galactic-result-item-value">
+                                    сек.
+                                </div>
+                            </div>
+                            <div class="advent-modal__galactic-result-item">
+                                <div class="advent-modal__galactic-result-item-key">
+                                    20
+                                </div>
+                                <div class="advent-modal__galactic-result-item-value">
+                                    миллисек.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advent-modal__galactic-result-btns">
+                        <a class="advent-modal__galactic-result-btn" href="#">
+                            Выполнить новый расчет
+                        </a>
+                        <a class="advent-modal__galactic-result-btn advent-modal__galactic-result-btn--with-bg"
+                           href="#">
+                            Что меня ждет в 2026 году
+                        </a>
+                    </div>
+                </div>
+                <div class="advent-modal__galactic-remark">
+                    *Галактический год - период, за который наша солнечная система совершает 1 оборот вокруг центра
+                    галактики.
+                </div>
+                <img alt="" class="advent-modal__galactic-illustration" src="/images/galactic.webp">
             </div>
         </div>
     </div>
