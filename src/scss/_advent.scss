@@ -912,6 +912,10 @@
   position: relative;
   flex-grow: 1;
   margin-top: 4rem;
+  @include breakpoint(mobile) {
+    margin-top: 2rem;
+  }
+
 }
 
 .advent-modal__ogonek-text {
@@ -921,8 +925,18 @@
   line-height: 120%;
   font-family: var(--wiguru), sans-serif;
 
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
   p {
     margin-top: 4rem;
+    @include breakpoint(mobile) {
+      margin-top: 1rem;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -936,6 +950,15 @@
   gap: 5rem;
   flex-wrap: wrap;
   margin-top: 15rem;
+
+  @include breakpoint(mobile) {
+    flex-wrap: nowrap;
+    margin-top: 3rem;
+    align-items: flex-start;
+    gap: 2.4rem;
+    flex-direction: column;
+  }
+
 }
 
 .advent-modal__ogonek-link {
@@ -943,6 +966,11 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+
+  @include breakpoint(mobile) {
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
 }
 
 .advent-modal__ogonek-link-image {
@@ -950,6 +978,11 @@
   height: 11.1rem;
   object-fit: contain;
   filter: drop-shadow(0 0.24rem 1.98rem rgba(0, 0, 0, 0.25));
+
+  @include breakpoint(mobile) {
+    width: 7rem;
+    height: 7rem;
+  }
 }
 
 .advent-modal__ogonek-link-text {
@@ -958,6 +991,13 @@
   font-weight: 400;
   line-height: 120%;
   font-family: var(--wiguru), sans-serif;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
 
 .advent-modal__ogonek-remark {
@@ -967,4 +1007,96 @@
   font-weight: 400;
   line-height: 120%;
   margin-top: 3rem;
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 2rem;
+  }
+}
+
+.advent-modal__ogonek-illustration {
+  position: absolute;
+  pointer-events: none;
+  width: 66rem;
+  height: auto;
+  right: -10rem;
+  bottom: -10rem;
+  z-index: 2;
+
+  @include breakpoint(mobile) {
+    width: 28rem;
+    bottom: 8rem;
+    right: -2rem;
+  }
+}
+
+.advent-modal__gifts {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(mobile) {
+    padding: 3rem 1rem;
+  }
+}
+
+.advent-modal__gifts-title {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--wiguru), sans-serif;
+  margin-bottom: 4rem;
+
+  @include breakpoint(mobile) {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.advent-modal__gifts-text {
+  max-width: 90rem;
+  align-self: center;
+  text-align: center;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--wiguru), sans-serif;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    align-self: stretch;
+    text-align: left;
+  }
+
+  p {
+    margin-bottom: 4rem;
+    @include breakpoint(mobile) {
+      margin-bottom: 2rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advent-modal__gifts-image {
+  width: 58rem;
+  height: auto;
+  align-self: center;
+
+  @include breakpoint(mobile) {
+    width: 100%;
+    align-self: stretch;
+    margin-top: 3rem;
+  }
 }
