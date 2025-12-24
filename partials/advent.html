@@ -1,0 +1,468 @@
+<section class="advent">
+    <div class="advent__content">
+        <div class="advent__top">
+            <picture>
+                <source media="(max-width: 640px)" srcset="/images/advent-top-bg-mobile.svg"/>
+                <img alt="" class="advent__top-bg" src="/images/advent-top-bg.svg">
+            </picture>
+            <div class="advent__top-content">
+                <div class="advent__wrapper">
+                    <div class="advent__text-content">
+                        <h1 class="advent__heading">
+                            Добро пожаловать в новогодний
+                            адвент-календарь Летай!
+                        </h1>
+                        <div class="advent__text-card">
+                            <p>
+                                Каждый день открывайте новую ячейку и получайте полезные советы, приятные бонусы и
+                                маленькие
+                                сюрпризы!
+                            </p>
+                            <p>
+                                Заглядывайте ежедневно — ведь кто знает, что принесет следующий день?<br>
+                                Вместе создаем праздничное настроение и готовимся к волшебному завершению года!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="advent__snowball-illustration">
+                <img alt="" class="advent__snowball-illustration-image" src="/images/advent-snowball.webp">
+            </div>
+        </div>
+        <div class="advent__bottom">
+            <div class="advent__cards">
+                <a class="advent__card" href="#">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="/images/advent-cards/1-mobile.webp"/>
+                        <img alt="" class="advent__card-image" src="/images/advent-cards/1.webp">
+                    </picture>
+                    <div class="advent__card-content">
+                        <div class="advent__card-title advent__card-title--aligned-bottom">
+                            Розыгрыш
+                        </div>
+                    </div>
+                </a>
+                <a class="advent__card locked" href="#">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="/images/advent-cards/2-mobile.webp"/>
+                        <img alt="" class="advent__card-image" src="/images/advent-cards/2.webp">
+                    </picture>
+                    <div class="advent__card-content">
+                        <div class="advent__card-date">
+                            25
+                        </div>
+                    </div>
+                </a>
+                <a class="advent__card locked" href="#">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="/images/advent-cards/4-mobile.webp"/>
+                        <img alt="" class="advent__card-image" src="/images/advent-cards/3.webp">
+                    </picture>
+                    <div class="advent__card-content">
+                        <div class="advent__card-date advent__card-date--aligned-right">
+                            26
+                        </div>
+                    </div>
+                </a>
+                <a class="advent__card locked" href="#advent-modal-poll">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="/images/advent-cards/3-mobile.webp"/>
+                        <img alt="" class="advent__card-image" src="/images/advent-cards/4.webp">
+                    </picture>
+                    <div class="advent__card-content">
+                        <div class="advent__card-date advent__card-date--aligned-bottom advent__card-date--orange">
+                            24
+                        </div>
+                    </div>
+                </a>
+                <a class="advent__card locked" href="#">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="/images/advent-cards/6-mobile.webp"/>
+                        <img alt="" class="advent__card-image" src="/images/advent-cards/5.webp">
+                    </picture>
+                    <div class="advent__card-content">
+                        <div class="advent__card-date advent__card-date--aligned-bottom advent__card-date--orange">
+                            27-28
+                        </div>
+                    </div>
+                </a>
+                <a class="advent__card locked" href="#">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="/images/advent-cards/8-mobile.webp"/>
+                        <img alt="" class="advent__card-image" src="/images/advent-cards/6.webp">
+                    </picture>
+                    <div class="advent__card-content">
+                        <div class="advent__card-date advent__card-date--aligned-right advent__card-date--orange">
+                            30
+                        </div>
+                    </div>
+                </a>
+                <a class="advent__card locked" href="#">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="/images/advent-cards/7-mobile.webp"/>
+                        <img alt="" class="advent__card-image" src="/images/advent-cards/7.webp">
+                    </picture>
+                    <div class="advent__card-content">
+                        <div class="advent__card-title advent__card-title--orange advent__card-title--aligned-bottom">
+                            Конкурс
+                        </div>
+                    </div>
+                </a>
+                <a class="advent__card locked" href="#">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="/images/advent-cards/5-mobile.webp"/>
+                        <img alt="" class="advent__card-image" src="/images/advent-cards/8.webp">
+                    </picture>
+                    <div class="advent__card-content">
+                        <div class="advent__card-date advent__card-date--aligned-right advent__card-date--orange">
+                            29
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="advent-modal js-modal" id="advent-modal-poll">
+    <div class="advent-modal__inner">
+        <picture>
+            <source media="(max-width: 640px)" srcset="/images/advent-modal-mobile.svg"/>
+            <img alt="" class="advent-modal__image" src="/images/advent-modal.svg">
+        </picture>
+        <div class="advent-modal__content">
+            <div class="advent-modal__date">
+                24 декабря
+            </div>
+            <div class="advent-modal__poll">
+                <img alt="" class="advent-modal__poll-illustration" src="/images/modal-poll-illustration.webp">
+                <div class="advent-modal__poll-heading">
+                    Пожалуйста, ответьте на 5 простых вопросов — ваши ответы пригодятся для приятного подарка 30
+                    декабря.
+                    Не волнуйтесь, это займет всего пару минут!
+                    Готовы? Начнём!
+                </div>
+                <form action="/" class="advent-modal__poll-form" method="POST">
+                    <div class="advent-modal__poll-form-fields">
+                        <div class="advent-modal__poll-form-field">
+                            <div class="advent-modal__poll-form-field-label">
+                                <span class="advent-modal__poll-form-field-number">1.</span>
+                                <span class="advent-modal__poll-form-field-text">
+                                    Как тебя зовут?
+                                </span>
+                            </div>
+                            <input class="advent-modal__poll-form-input" name="name" type="text">
+                        </div>
+                        <div class="advent-modal__poll-form-field">
+                            <div class="advent-modal__poll-form-field-label">
+                                <span class="advent-modal__poll-form-field-number">2.</span>
+                                <span class="advent-modal__poll-form-field-text">
+                                    Сколько тебе лет?
+                                </span>
+                            </div>
+                            <input class="advent-modal__poll-form-input" name="age" type="text">
+                        </div>
+                        <div class="advent-modal__poll-form-field">
+                            <div class="advent-modal__poll-form-field-label">
+                                <span class="advent-modal__poll-form-field-number">3.</span>
+                                <span class="advent-modal__poll-form-field-text">
+                                    Какой у тебя любимый
+                                    праздничный ритуал? <b>(Например : готовка, упаковка
+                                    подарков,
+                                    поедание мандаринов)</b>
+                                </span>
+                            </div>
+                            <input class="advent-modal__poll-form-input" name="ritual" type="text">
+                        </div>
+                        <div class="advent-modal__poll-form-field">
+                            <div class="advent-modal__poll-form-field-label">
+                                <span class="advent-modal__poll-form-field-number">4.</span>
+                                <span class="advent-modal__poll-form-field-text">
+                                    Какой твой любимый фильм?
+                                </span>
+
+                            </div>
+                            <input class="advent-modal__poll-form-input" name="movie" type="text">
+                        </div>
+                        <div class="advent-modal__poll-form-field">
+                            <div class="advent-modal__poll-form-field-label">
+                                <span class="advent-modal__poll-form-field-number">5.</span>
+                                <span class="advent-modal__poll-form-field-text">
+                                    Твоя профессия
+                                </span>
+                            </div>
+                            <input class="advent-modal__poll-form-input" name="profession" type="text">
+                        </div>
+                        <div class="advent-modal__poll-form-field">
+                            <div class="advent-modal__poll-form-field-label">
+                                <span class="advent-modal__poll-form-field-number">6.</span>
+                                <span class="advent-modal__poll-form-field-text">
+                                    Почта <b>(подойдет любая, чтобы подвести итог нужно будет ввести снова эту же
+                                    почту)</b>
+                                </span>
+                            </div>
+                            <input class="advent-modal__poll-form-input" name="ritual" type="text">
+                        </div>
+                    </div>
+                    <button class="advent-modal__poll-form-submit" type="submit">
+                        Отправить ответ
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<div class="advent-modal js-modal" id="advent-modal-poll-success">
+    <div class="advent-modal__inner">
+        <picture>
+            <source media="(max-width: 640px)" srcset="/images/advent-modal-mobile.svg"/>
+            <img alt="" class="advent-modal__image" src="/images/advent-modal.svg">
+        </picture>
+        <div class="advent-modal__content">
+            <div class="advent-modal__date">
+                24 декабря
+            </div>
+
+            <div class="advent-modal__poll-success">
+                <div class="advent-modal__poll-success-card">
+                    <p>
+                        Спасибо за ответы! Заглядывайте завтра — впереди ещё много приятных открытий.
+                    </p>
+                    <p>
+                        А пока что мы
+                        подготовили для вас новогодний
+                        чек-лист важных дел.<br>
+                        Проверьте себя и своих коллег — всё ли успеваете сделать к празднику!
+                    </p>
+                </div>
+                <a class="advent-modal__poll-success-link" href="#">
+                    Чек-лист
+                </a>
+                <img alt="" class="advent-modal__poll-illustration" src="/images/modal-poll-illustration.webp">
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+<div class="advent-modal js-modal" id="advent-modal-checklist">
+    <div class="advent-modal__inner">
+        <picture>
+            <source media="(max-width: 640px)" srcset="/images/advent-modal-mobile.svg"/>
+            <img alt="" class="advent-modal__image" src="/images/advent-modal.svg">
+        </picture>
+        <div class="advent-modal__content">
+            <div class="advent-modal__date">
+                24 декабря
+            </div>
+
+            <div class="advent-modal__checklist">
+                <h2 class="advent-modal__checklist-heading">
+                    Новогодний чек-лист
+                </h2>
+                <ul class="advent-modal__checklist-list">
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/1.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Объесться мандаринами
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/2.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Подвести итоги года
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/3.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Составить список подарков
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/4.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Выпить горячий какао
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/5.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Слепить снеговика
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/6.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Покататься на коньках
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/7.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Поставить елку
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/8.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Поиграть в снежки
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/9.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Украсить любимый кабинет
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advent-modal__checklist-list-item">
+                        <div class="advent-modal__checklist-card">
+                            <img alt="" class="advent-modal__checklist-card-image"
+                                 src="/images/advent-checklist/10.webp">
+                            <div class="advent-modal__checklist-card-checkbox">
+                                <div class="advent-modal__checklist-card-mark">
+
+                                </div>
+                                <div class="advent-modal__checklist-card-text">
+                                    Сварить пунш или глинтвейн
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a class="advent-modal__checklist-link" href="#">
+                    Скачать чек-лист
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="advent-modal js-modal" id="advent-modal-ogonek">
+    <div class="advent-modal__inner">
+        <picture>
+            <source media="(max-width: 640px)" srcset="/images/advent-modal-mobile.svg"/>
+            <img alt="" class="advent-modal__image" src="/images/advent-modal.svg">
+        </picture>
+        <div class="advent-modal__content">
+            <div class="advent-modal__date">
+                29 декабря
+            </div>
+            <div class="advent-modal__ogonek">
+                <div class="advent-modal__ogonek-text">
+                    <p>
+                        Голубой огонек.
+                    </p>
+                    <p>
+                        Сегодня создаём настроение! 🎶<br>
+                        Включайте наш сборник новогодних хитов — идеально для приготовления праздничного ужина или
+                        веселой
+                        дискотеки после боя курантов.
+                    </p>
+                </div>
+                <div class="advent-modal__ogonek-links">
+                    <a class="advent-modal__ogonek-link" href="#">
+                        <img alt="" class="advent-modal__ogonek-link-image" src="/images/advent-ogonek/1.webp">
+                        <span class="advent-modal__ogonek-link-text">
+                            Яндекс музыка
+                        </span>
+                    </a>
+                    <a class="advent-modal__ogonek-link" href="#">
+                        <img alt="" class="advent-modal__ogonek-link-image" src="/images/advent-ogonek/2.webp">
+                        <span class="advent-modal__ogonek-link-text">
+                            VK музыка
+                        </span>
+                    </a>
+                    <a class="advent-modal__ogonek-link" href="#">
+                        <img alt="" class="advent-modal__ogonek-link-image" src="/images/advent-ogonek/3.webp">
+                        <span class="advent-modal__ogonek-link-text">
+                            МТС музыка
+                        </span>
+                    </a>
+                </div>
+                <div class="advent-modal__ogonek-remark">
+                    Выбирайте удобный источник и пусть<br> праздник заиграет музыкой!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
