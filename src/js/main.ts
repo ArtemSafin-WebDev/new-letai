@@ -9,19 +9,22 @@ import bitrixForms from "./bitrixForms";
 import fileUpload from "./fileUpload.ts";
 import accordions from "./accordions.ts";
 import birthDate from "./birthDate.ts";
+import adventPostcards from "./adventPostcards.ts";
 
 document.addEventListener("DOMContentLoaded", () => {
-  tariffsSlider();
-  menu();
-  modals();
-  forms();
-  bitrixForms();
-  fileUpload();
-  accordions();
-  // vacancies();
-  birthDate();
+    tariffsSlider();
+    menu();
+    modals();
+    forms();
+    bitrixForms();
+    fileUpload();
+    accordions();
+    // vacancies();
+    birthDate();
+
 });
 
 window.addEventListener("load", () => {
-  document.body.classList.add("loaded");
+    document.body.classList.add("loaded");
+    adventPostcards();
 });
