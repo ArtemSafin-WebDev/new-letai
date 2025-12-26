@@ -1992,3 +1992,135 @@
   }
 
 }
+
+
+.advent-modal__generator {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.advent-modal__generator-text {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--wiguru), sans-serif;
+  margin-bottom: 2rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 5rem;
+  }
+}
+
+.advent-modal__generator-illustration {
+  align-self: center;
+  width: 98rem;
+  margin-bottom: 3rem;
+
+  @include breakpoint(mobile) {
+    width: 100%;
+
+  }
+}
+
+.advent-modal__generator-link {
+  align-self: center;
+  font-size: 3.2rem;
+  padding: 2rem 6rem;
+  border-radius: 2.7rem;
+  background: #FFF;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #FE5000;
+  box-shadow: 0 0.28rem 1.94rem 0 rgba(0, 0, 0, 0.25);
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 2rem 2.4rem;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0 0.28rem 1.94rem 0 rgba(0, 0, 0, 0.25);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &:link,
+  &:visited {
+    color: #FE5000;
+  }
+}
+
+.advent-modal__movie {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 3rem;
+}
+
+.advent-modal__movie-text {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--wiguru), sans-serif;
+  margin-bottom: 2.5rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+
+.advent-modal__movie-image {
+  align-self: center;
+  width: 100rem;
+  height: auto;
+  margin-bottom: 5rem;
+  max-width: 100%;
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
+}
+
+
+.advent-modal__movie-link {
+  align-self: center;
+  text-align: center;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #FE5000;
+  border-radius: 2.7rem;
+  background: #FFF;
+  padding: 2.4rem;
+
+  &:link,
+  &:visited {
+    color: #FE5000;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    width: 100%;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0 0.28rem 1.94rem 0 rgba(0, 0, 0, 0.25);
+  }
+}
