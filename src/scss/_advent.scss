@@ -1783,3 +1783,212 @@
     }
   }
 }
+
+
+.advent-modal__participate {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.advent-modal__participate-illustration {
+  position: absolute;
+  width: 90rem;
+  height: auto;
+  pointer-events: none;
+  right: -20rem;
+  bottom: -10rem;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.advent-modal__participate-title {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--wiguru), sans-serif;
+  margin-bottom: 4rem;
+
+  @include breakpoint(mobile) {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 1rem;
+  }
+}
+
+.advent-modal__participate-second-title {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--wiguru), sans-serif;
+  margin-bottom: 6rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 1rem;
+
+  }
+}
+
+.advent-modal__participate-text {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--wiguru), sans-serif;
+  margin-bottom: 4rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 0.5rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advent-modal__participate-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 92.6rem;
+}
+
+
+.advent-modal__participate-form-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 469fr) minmax(0, 413fr);
+  grid-gap: 4.4rem;
+  grid-row-gap: 3.6rem;
+
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+
+}
+
+.advent-modal__participate-form-field {
+  grid-column: 1 / 2;
+
+  &--second-col {
+    grid-column: 2 / 3;
+  }
+}
+
+.advent-modal__participate-form-field-input-group {
+  display: flex;
+  align-items: center;
+  @include breakpoint(mobile) {
+    display: block;
+  }
+
+}
+
+.advent-modal__participate-form-field-input-label {
+  width: 19.5rem;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  font-family: var(--wiguru), sans-serif;
+  margin-bottom: .5rem;
+  flex-shrink: 0;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.advent-modal__participate-form-field-input-wrapper {
+  flex-grow: 1;
+  min-width: 0;
+  @include breakpoint(mobile) {
+    flex-grow: 0;
+  }
+}
+
+.advent-modal__participate-form-field-input {
+  display: block;
+  text-align: left;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  border-radius: 2.5rem;
+  background: #FFF;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+  height: 7rem;
+  color: black;
+  padding: 0 2rem;
+
+  &::placeholder {
+    color: #C8C8C8;
+  }
+
+  @include breakpoint(mobile) {
+    height: 5rem;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0 0.28rem 1.94rem 0 rgba(0, 0, 0, 0.25);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+  }
+}
+
+.advent-modal__participate-form-submit {
+  align-self: flex-start;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 1.6rem 4rem;
+  width: 46.7rem;
+  max-width: none;
+  border-radius: 2.5rem;
+  background: #FFF;
+  box-shadow: 0 0.4rem 0.4rem 0 #FFB990 inset;
+  color: #FE5000;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4rem;
+
+  @include breakpoint(mobile) {
+    margin-top: 1.6rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0 0.28rem 1.94rem 0 rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 1.2rem;
+    width: 100%;
+  }
+
+}

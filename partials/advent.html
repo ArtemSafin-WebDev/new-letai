@@ -748,3 +748,99 @@
         </div>
     </div>
 </div>
+
+<div class="advent-modal active js-modal" id="advent-modal-participate">
+    <div class="advent-modal__inner">
+        <picture>
+            <source media="(max-width: 640px)" srcset="/images/advent-modal-mobile.svg"/>
+            <img alt="" class="advent-modal__image" src="/images/advent-modal.svg">
+        </picture>
+        <div class="advent-modal__content">
+            <div class="advent-modal__participate">
+
+
+                <div class="advent-modal__participate-title">
+                    Конкурс
+                </div>
+                <div class="advent-modal__participate-second-title">
+                    Примите участие и украсьте рабочее пространство к Новому году!
+
+
+                </div>
+                <div class="advent-modal__participate-text">
+                    <p>
+                        Как участвовать: оформите кабинет в праздничной тематике и загрузите фото ниже. Важно: дождитесь
+                        всплывающего уведомления, что вы участвуете в конкурсе.
+                    </p>
+                    <p>
+                        Кто будет выбирать: независимое жюри оценит креативность и атмосферу.
+                    </p>
+                    <p>
+                        Приз: каждый участник команды получит роутер «Интернет в кубе».
+                        Победителя объявим 30 декабря!
+                    </p>
+                </div>
+                <form action="/" class="advent-modal__participate-form" method="POST">
+
+                    <div class="advent-modal__participate-form-fields">
+                        <div class="advent-modal__participate-form-field">
+                            <div class="advent-modal__participate-form-field-input-group">
+                                <div class="advent-modal__participate-form-field-input-label">
+                                    Загрузите фото
+                                </div>
+                                <div class="advent-modal__participate-form-field-input-wrapper">
+                                    <label class="file-field js-file-upload">
+                                        <input name="photo" required type="file"/>
+                                        <span class="file-field__text js-file-upload-text">Загрузить
+                                            фото</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advent-modal__participate-form-field advent-modal__participate-form-field--second-col">
+                            <div class="advent-modal__participate-form-field-select">
+                                <select class="custom-select" required>
+                                    <option disabled hidden selected value="">
+                                        Выберите значение
+                                    </option>
+                                    <option value="opt1">Option 1</option>
+                                    <option value="opt2">Option 2</option>
+                                    <option value="opt3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advent-modal__participate-form-field">
+                            <div class="advent-modal__participate-form-field-input-group">
+                                <div class="advent-modal__participate-form-field-input-label">
+                                    Номер кабинета
+                                </div>
+                                <div class="advent-modal__participate-form-field-input-wrapper">
+                                    <input class="advent-modal__participate-form-field-input" name="number"
+                                           placeholder="№"
+                                           required type="number">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advent-modal__participate-form-field">
+                            <div class="advent-modal__participate-form-field-input-group">
+                                <div class="advent-modal__participate-form-field-input-label">
+                                    Контакт для связи
+                                </div>
+                                <div class="advent-modal__participate-form-field-input-wrapper">
+                                    <input class="advent-modal__participate-form-field-input" name="email"
+                                           placeholder="Электронная почта"
+                                           required type="email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="advent-modal__participate-form-submit" type="submit">
+                        Отправить
+                    </button>
+                </form>
+                <img alt="" class="advent-modal__participate-illustration" src="/images/participate.webp">
+            </div>
+        </div>
+    </div>
+</div>
