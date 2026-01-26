@@ -16,7 +16,7 @@
 }
 
 .cube-solution__heading {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 700;
@@ -29,7 +29,19 @@
     font-style: normal;
     font-weight: 700;
     line-height: 2.4rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.cube-solution__subheading {
+  margin-bottom: 4rem;
+  font-weight: 400;
+  line-height: 120%;
+  font-size: 1.8rem;
+  color: #fe5000;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 1.2rem;
   }
 }
 
