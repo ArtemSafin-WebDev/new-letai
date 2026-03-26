@@ -19,12 +19,18 @@ export default function forms() {
       // @ts-ignore
       const wait = BX.showWait(form);
 
+      let yaID;
+      // @ts-ignore
+      ym(48331871, 'getClientID', function(clientID) {
+        yaID = clientID
+      });
 
       const data = {
         // @ts-ignore
         firstname: form.elements['firstname'].value,
         // @ts-ignore
-        phone: form.elements['phone'].value
+        phone: form.elements['phone'].value,
+        clientId: yaID
       };
 
       // @ts-ignore
